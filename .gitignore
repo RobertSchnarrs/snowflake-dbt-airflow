@@ -1,0 +1,13 @@
+.env
+keys/
+*.p8
+*.pem
+*.key
+logs/
+dbt/logs/
+dbt/target/
+dbt/dbt_packages/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
