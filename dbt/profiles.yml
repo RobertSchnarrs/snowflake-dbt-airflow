@@ -1,0 +1,14 @@
+snowflake_learning:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
+      user: "{{ env_var('SNOWFLAKE_USER') }}"
+      private_key_path: /opt/airflow/keys/rsa_key.p8
+      role: "{{ env_var('SNOWFLAKE_ROLE') }}"
+      warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE') }}"
+      database: "{{ env_var('SNOWFLAKE_DATABASE') }}"
+      schema: "{{ env_var('SNOWFLAKE_SCHEMA') }}"
+      threads: 4
+      client_session_keep_alive: false
