@@ -9,8 +9,8 @@ services:
       - .env
     environment:
       AIRFLOW_HOME: /opt/airflow
-      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
-      AIRFLOW__CORE__DAGS_FOLDER: /opt/airflow/dags
+      AIRFLOW_CORE_LOAD_EXAMPLES: "false"
+      AIRFLOW_CORE_DAGS_FOLDER: /opt/airflow/dags
       DBT_PROFILES_DIR: /opt/airflow/dbt
     ports:
       - "8080:8080"
